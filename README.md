@@ -1,6 +1,6 @@
 # jOverscroll.js
 
-A simple jQuery plugin handling text scrolling on hover. We found it a relatively common occurence that a design might need to accommodate text areas that on rare occasions contain more text than is expected (or fits) in situations where wrapping to the next line is not a good solution. We solve this problem in a few places by letting hiding the overflow and scrolling the text when the mouse hovered it, and having it snap back to normal when the mouse comes off it.
+A simple jQuery plugin handling text scrolling on hover. We found it a relatively common occurence that a design might need to accommodate text areas that on rare occasions contain more text than is expected (or fits) in situations where wrapping to the next line is not a good solution. We solve this problem in a few places by hiding the overflow and scrolling the text when the mouse hovered it, and having it snap back to normal when the mouse comes off it.
 
 ## Usage
 
