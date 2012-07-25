@@ -35,12 +35,12 @@
                 var $this = $(this);
                 $this.css({ 'white-space': 'pre', overflow: 'hidden', width: settings.width });
                 $this.hover(function(){
-                    var difference = $(this).get(0).scrollWidth - $(this).width();
+                    var difference = $this.get(0).scrollWidth - $this.width();
                     if (difference > 0) {
-                        $(this).stop().animate({ 'text-indent': -difference}, settings.scrollTime);
+                        $this.stop().animate({ 'text-indent': -difference}, settings.scrollTime);
                     }
                 }, function(){
-                    $(this).stop().animate({ 'text-indent': 0}, settings.scrollBackTime);
+                    $this.stop().animate({ 'text-indent': 0}, settings.scrollBackTime);
                 });
             });
         }
