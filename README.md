@@ -8,7 +8,7 @@ The plugin is super easy to use:
 
     $('#some .selector').jOverscroll();
 
-You can override the default values (these are the defaults):
+You can override the default values (Note: if you don't set width, the plugin will not override the element's width):
 
     $('#some .selector').jOverscroll({ width: 'auto', scrollTime: 500, scrollBackTime: 100 });
 

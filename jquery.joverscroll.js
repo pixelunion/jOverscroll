@@ -24,7 +24,7 @@
     $.fn.extend({
         jOverscroll: function(options) {
             this.defaultOptions = {
-                width: 'auto',
+                width: null,
                 scrollTime: 500,
                 scrollBackTime: 100
             };
@@ -33,7 +33,10 @@
 
             return this.each(function() {
                 var $this = $(this);
-                $this.css({ 'white-space': 'pre', overflow: 'hidden', width: settings.width });
+                $this.css({ 'white-space': 'pre', overflow: 'hidden' });
+                if (settings.width) {
+                    $this.css({ width: settings.width });
+                }
                 $this.hover(function(){
                     var difference = $this.get(0).scrollWidth - $this.width();
                     if (difference > 0) {
