@@ -1,4 +1,4 @@
-/*
+/*!
     Copyright (c) 2012 Pixel Union, http://pixelunion.net
 
     Permission is hereby granted, free of charge, to any person obtaining
